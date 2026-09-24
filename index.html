@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Adithya Machavarapu — Data Analyst</title>
+<meta name="description" content="Adithya Machavarapu — data analyst. Python, SQL, dashboards and market-risk models. B.Tech CSE (Data Analytics), VIT-AP University, class of 2028.">
+<meta name="theme-color" content="#050807">
+<meta property="og:title" content="Adithya Machavarapu — Data Analyst">
+<meta property="og:description" content="I clean the data, find the story, and show my working.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;450;500;550;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23050807'/%3E%3Cpath d='M6 22 L12 12 L17 18 L26 8' stroke='%2300E87A' stroke-width='2.4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+
+<script type="importmap">
+{ "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.module.js" } }
+</script>
+</head>
+
+<body class="is-loading">
+
+<!-- ═══════════ LOADER ═══════════ -->
+<div id="loader">
+  <div class="ld-slices"><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="ld-sun"></div>
+  <div class="ld-ring"></div>
+  <div class="ld-ring r2"></div>
+  <div class="ld-lines"></div>
+
+
+  <div class="ld">
+    <div class="ld-rule"></div>
+    <div class="ld-name" id="ldName">ADITHYA MACHAVARAPU</div>
+    <div class="ld-sub">DATA <em>/</em> RISK <em>/</em> ANALYSIS</div>
+    <div class="ld-bar"><i id="ldBar"></i></div>
+    <div class="ld-mono"><span id="ldLog">booting…</span><span id="ldPct">00</span></div>
+  </div>
+</div>
+
+
+<!-- ═══════════ ATMOSPHERE ═══════════ -->
+<div class="fx fx-grain"></div>
+<div class="fx fx-scan"></div>
+<div class="fx fx-vignette"></div>
+<div class="cursor" id="cursor"><i></i><i></i><i></i><i></i><b></b></div>
+
+<!-- ═══════════ TICKER ═══════════ -->
+<div class="tape"><div class="tape-row" id="tape"></div></div>
+
+<!-- ═══════════ NAV ═══════════ -->
+<header class="nav" id="nav">
+  <a href="#hero" class="brand" data-hot>
+    <span class="brand-mark" id="brandMark">AM</span>
+    <span class="brand-txt"><b id="brandName">Machavarapu</b> <em>/ risk</em></span>
+  </a>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#room">Control Room</a>
+    <a href="#skills">Skills</a>
+    <a href="#crash">Crash Test</a>
+    <a href="#work">Work</a>
+    <a href="#certs">Certifications</a>
+    <a href="#resume">Résumé</a>
+  </nav>
+
+  <a href="#contact" class="nav-cta" data-hot><i></i> Available for work</a>
+  <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+</header>
+
+<div class="drawer" id="drawer">
+  <a href="#about">About</a><a href="#services">Services</a><a href="#room">Control Room</a>
+  <a href="#skills">Skills</a><a href="#crash">Crash Test</a><a href="#work">Work</a>
+  <a href="#certs">Certifications</a><a href="#resume">Résumé</a><a href="#contact">Contact</a>
+</div>
+
+<main>
+
+<!-- ═══════════════════════════════════════════════════════════
+     HERO  —  3D globe, transaction arcs, risk shockwaves
+     ═══════════════════════════════════════════════════════════ -->
+<section id="hero" class="hero">
+  <canvas id="viz"></canvas>
+
+  <div class="hero-in wrap">
+    <div class="hero-grid">
+
+      <div>
+        <div class="hero-tag"><i></i> <span id="tagTxt">Open to internships &amp; freelance work</span></div>
+
+        <h1 class="h-xl">
+          <span class="rv"><span>Adithya</span></span><br>
+          <span class="rv"><span>Machavarapu</span></span>
+          <span class="l2"><span class="rv"><span>Data <b>Analyst</b></span></span></span>
+        </h1>
+
+        <div class="hero-learn"><i></i> Python <em>·</em> SQL <em>·</em> Power BI <em>·</em> Monte Carlo</div>
+
+        <p class="hero-sub">
+          <strong>I clean the data, find the story, and show my working.</strong>
+          Python, SQL and dashboards — pointed at markets, where the numbers
+          actually move.
+        </p>
+
+        <div class="hero-btns">
+          <a href="#services" class="btn btn-fill" data-hot>
+            What I do
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 12 12 4M6 4h6v6"/></svg>
+          </a>
+          <a href="#crash" class="btn btn-ghost" data-hot>
+            Stress-test a crisis
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 3l8 5-8 5z"/></svg>
+          </a>
+        </div>
+
+        <div class="hero-stats" id="heroStats"></div>
+      </div>
+
+      <div class="hud">
+        <div class="hud-card hud-c1" data-depth="26">
+          <div class="hud-h"><span>Simulated VaR</span><b>95%</b></div>
+          <div class="hud-v" id="hudVar">&#8377; 1,84,200<small>/10L</small></div>
+          <div class="bars" id="hudBars"></div>
+          <div class="hud-d">10,000 draws &middot; 96 days &middot; GBM</div>
+        </div>
+
+        <div class="hud-card hud-c2" data-depth="44">
+          <div class="hud-h"><span>Probability of loss</span><b id="hudNet">TAIL</b></div>
+          <div class="hud-v" id="hudExp">47.5<small>%</small></div>
+          <svg class="spark" id="hudSpark" viewBox="0 0 200 34" preserveAspectRatio="none"></svg>
+          <div class="hud-d">share of outcomes below zero</div>
+        </div>
+
+        <div class="hud-card hud-c3" data-depth="18">
+          <div class="hud-h"><span>Volatility</span><b>LIVE</b></div>
+          <div class="hud-v" id="hudFlow">30.0<small>% ann.</small></div>
+          <div class="hud-d" id="hudRoute">normal tape</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="scroller"><span>Scroll</span><i></i></div>
+  <div class="globe-hint"><i>✦</i> Click to change the shape · drag to tilt</div>
+</section>
+
+<!-- ═══════════ MARQUEE ═══════════ -->
+<div class="mq">
+  <div class="mq-row" id="mq1">
+    <span>Value at Risk</span><span>Expected Shortfall</span><span><em>Monte Carlo</em></span>
+    <span>Backtesting</span><span>SQL</span><span><em>Python</em></span><span>Dashboards</span>
+    <span>Stress Testing</span><span><em>Volatility</em></span><span>Cohort Analysis</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     ABOUT
+     ═══════════════════════════════════════════════════════════ -->
+<section id="about" class="sec">
+  <div class="wrap">
+    <div class="ab-grid">
+
+      <div class="ab-body">
+        <div class="eyebrow">01 — Who you're hiring</div>
+        <h2 class="h-lg glitch" style="margin-bottom:34px">
+          I make the numbers<br><span style="color:var(--green)">make sense</span>.
+        </h2>
+
+        <p data-split>
+          I'm Adithya — a <strong>B.Tech Computer Science student at VIT-AP</strong>,
+          Data Analytics specialisation, class of 2028, based in Hyderabad. I got here
+          the usual way: <span class="g">a spreadsheet that didn't add up, and the
+          stubborn need to know why.</span>
+        </p>
+        <p data-split>
+          Markets are where I point that stubbornness. Finance is the one field where
+          data has real consequences — a wrong number isn't a typo, it's money. So I
+          build the things that keep numbers honest: <strong>Python models, SQL
+          pipelines, Excel dashboards</strong>, and risk measures like Value at Risk
+          and Expected Shortfall that say out loud how bad a bad day can get.
+        </p>
+        <p data-split>
+          Every model on this page is mine — built from scratch, backtested, and broken
+          on purpose to find out where it fails. That's the standard client work gets
+          too: <span class="g">if I hand you a number, I can show you exactly how it
+          was made.</span>
+        </p>
+
+        <dl class="ab-meta">
+          <div class="ab-row"><dt>University</dt><dd id="mUni">VIT-AP University</dd></div>
+          <div class="ab-row"><dt>Programme</dt><dd id="mDeg">B.Tech — Computer Science &amp; Engineering</dd></div>
+          <div class="ab-row"><dt>Specialisation</dt><dd id="mSpec">Data Analytics</dd></div>
+          <div class="ab-row"><dt>Graduating</dt><dd id="mYear">2028</dd></div>
+          <div class="ab-row"><dt>Based in</dt><dd id="mLoc">Hyderabad, India</dd></div>
+          <div class="ab-row"><dt>Status</dt><dd style="color:var(--green)">Available — data analysis &amp; internships</dd></div>
+        </dl>
+      </div>
+
+      <div class="term">
+        <div class="term-bar"><i></i><i></i><i></i><span>risk_engine.py — python3</span></div>
+        <div class="term-body" id="termBody"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="sec-line"></div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SERVICES
+     ═══════════════════════════════════════════════════════════ -->
+<section id="services" class="sec">
+  <div class="wrap">
+    <div class="sv-head">
+      <div>
+        <div class="eyebrow">02 — Services</div>
+        <h2 class="h-lg">Hire me<br>for <span style="color:var(--green)">this</span>.</h2>
+      </div>
+      <p class="lead" style="max-width:38ch">
+        Not a list of every tool I've opened once. These are the four
+        I'd let you pay me for.
+      </p>
+    </div>
+
+    <div class="sv-grid" id="svGrid"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     CONTROL ROOM  —  isometric WebGL trading floor
+     ═══════════════════════════════════════════════════════════ -->
+<section id="room" class="sec">
+  <div class="wrap">
+    <div class="room-head">
+      <div class="eyebrow" style="justify-content:center">03 — The Control Room</div>
+      <h2 class="h-lg">Where the numbers live.</h2>
+      <p class="lead">
+        A risk desk, rendered live in your browser. Every screen is drawing real
+        candles, every panel is recomputing. Drag it around.
+      </p>
+    </div>
+
+    <div class="room-stage">
+      <div class="room-grid"></div>
+      <canvas id="roomCanvas"></canvas>
+      <div class="room-load" id="roomLoad">building the desk…</div>
+      <div class="room-tag" id="roomTag"></div>
+      <div class="room-legend">
+        <span><i style="background:var(--green)"></i> Within limits</span>
+        <span><i style="background:var(--amber)"></i> Watchlist</span>
+        <span><i style="background:var(--red)"></i> Breach</span>
+      </div>
+      <div class="room-drag">Drag to orbit · hover a panel</div>
+    </div>
+  </div>
+</section>
+
+<div class="sec-line"></div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SKILLS
+     ═══════════════════════════════════════════════════════════ -->
+<section id="skills" class="sec">
+  <div class="wrap">
+    <div class="sv-head">
+      <div>
+        <div class="eyebrow">04 — Toolkit</div>
+        <h2 class="h-lg">What's actually<br>on my machine.</h2>
+      </div>
+      <p class="lead" style="max-width:36ch">
+        Honest version. Things I've shipped something with, not things I've watched
+        a tutorial about.
+      </p>
+    </div>
+    <div class="sk-grid" id="skGrid"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     THE CRASH TEST  —  historical stress testing, replayed
+     ═══════════════════════════════════════════════════════════ -->
+<section id="crash" class="sec">
+  <div class="wrap">
+    <div class="room-head" style="margin-bottom:40px">
+      <div class="eyebrow" style="justify-content:center">05 — The Crash Test</div>
+      <h2 class="h-lg">Could your money<br>survive <span style="color:var(--red)">2008</span>?</h2>
+      <p class="lead">
+        Stress testing is the job. Pick a crisis, hand it a portfolio, and watch
+        what the history would have done to it — and how long the climb back took.
+      </p>
+    </div>
+
+    <div class="lab-shell">
+      <aside class="lab-side">
+        <h4>Pick your crisis</h4>
+        <div class="crisis-list" id="crisisList"></div>
+
+        <div class="ctl" style="margin-top:24px">
+          <div class="ctl-h"><label for="cpv">Portfolio value</label><b id="cpvV">₹10.0L</b></div>
+          <input type="range" id="cpv" min="1" max="100" value="10" step="1">
+        </div>
+
+        <button class="lab-run" id="crashReplay">Replay the crash</button>
+        <p class="lab-note">
+          Stylised replays: depths, durations and recovery times match the record;
+          the day-to-day wiggles are illustrative. Not investment advice — history's
+          only promise is that it rhymes.
+        </p>
+      </aside>
+
+      <div class="lab-main">
+        <dl class="lab-out">
+          <div class="lab-kpi"><dt>Max drawdown</dt><dd class="r" id="kDD">—</dd></div>
+          <div class="lab-kpi"><dt>Loss at the bottom</dt><dd class="r" id="kLoss">—</dd></div>
+          <div class="lab-kpi"><dt>Days falling</dt><dd id="kFall">—</dd></div>
+          <div class="lab-kpi"><dt>Time to recover</dt><dd class="g" id="kRec">—</dd></div>
+        </dl>
+
+        <div class="lab-canvas"><canvas id="crashCanvas"></canvas></div>
+
+        <p class="crisis-story" id="crisisStory">—</p>
+
+        <div class="lab-legend">
+          <span><i style="background:var(--green)"></i> Above water</span>
+          <span><i style="background:var(--amber)"></i> Underwater</span>
+          <span><i style="background:var(--red)"></i> Deep drawdown</span>
+          <span><i style="background:var(--text-3)"></i> Previous peak</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sec-line"></div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     WORK  —  EMPTY BY DESIGN
+     ▸▸ TO ADD A PROJECT: copy one <article class="slot"> block
+        below and replace the placeholder bars with real content.
+     ═══════════════════════════════════════════════════════════ -->
+<section id="work" class="sec">
+  <div class="wrap">
+    <div class="slot-head">
+      <div>
+        <div class="eyebrow">06 — Selected work</div>
+        <h2 class="h-lg">Projects.</h2>
+      </div>
+      <span class="slot-count" id="workCount">4 featured · all repos on GitHub</span>
+    </div>
+
+    <!-- ▼ rendered from CONFIG.projects — edit js/config.js, not this -->
+    <div class="projs" id="projGrid"></div>
+
+    <div class="work-more">
+      <a href="#" id="ghWork" class="btn btn-ghost" target="_blank" rel="noopener" data-hot>
+        More on GitHub — all repositories
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 12 12 4M6 4h6v6"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     CERTIFICATIONS  —  EMPTY BY DESIGN
+     ═══════════════════════════════════════════════════════════ -->
+<section id="certs" class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="slot-head">
+      <div>
+        <div class="eyebrow">07 — Credentials</div>
+        <h2 class="h-lg">Certifications.</h2>
+      </div>
+      <span class="slot-count" id="certCount">2 verified · more incoming</span>
+    </div>
+
+    <!-- ▼ rendered from CONFIG.certs — edit js/config.js, not this -->
+    <div class="projs" id="certGrid"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     RÉSUMÉ  —  EMPTY BY DESIGN
+     ▸▸ Drop the PDF in /assets and set CONFIG.resumeFile
+     ═══════════════════════════════════════════════════════════ -->
+<section id="resume" class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="slot-head">
+      <div>
+        <div class="eyebrow">08 — Document</div>
+        <h2 class="h-lg">Résumé.</h2>
+      </div>
+      <span class="slot-count" id="cvState">Not uploaded yet</span>
+    </div>
+
+    <article class="slot slot-wide cv-live" style="min-height:190px">
+      <div class="slot-no">CV / 2026</div>
+      <div class="slot-mid cv-meta">
+        <h3>Data Analyst — Financial &amp; Market Risk Analytics</h3>
+        <p>One page. ATS-friendly: single column, standard headings, fully machine-readable text.
+        Covers the four featured projects, the toolkit, VIT-AP, and verified certifications.</p>
+        <span class="cv-tags">PDF · A4 · updated Sep 2026</span>
+      </div>
+      <a href="#" class="btn btn-fill" id="cvBtn" data-hot>
+        Download PDF
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 2v9m0 0 3.5-3.5M8 11 4.5 7.5M3 14h10"/></svg>
+      </a>
+    </article>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     CONTACT
+     ═══════════════════════════════════════════════════════════ -->
+<section id="contact" class="sec">
+  <div class="wrap">
+    <div class="ct">
+      <div class="eyebrow" style="justify-content:center">09 — Contact</div>
+      <h2 class="h-lg">Got numbers that need<br><em>a second opinion?</em></h2>
+      <p class="lead">
+        Internships, freelance analysis, or a dataset nobody wants to open —
+        I read everything that comes in.
+      </p>
+
+      <div class="ct-btns">
+        <a href="#" class="btn btn-fill" id="mailBtn" data-hot>
+          Send an email
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M2 4h12v8H2zM2 4l6 5 6-5"/></svg>
+        </a>
+        <a href="#" class="btn btn-ghost" id="liBtn" data-hot>
+          LinkedIn
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 12V6.5M4 4v.01M8 12V8.6c0-1.2.9-2.1 2-2.1s2 .9 2 2.1V12"/></svg>
+        </a>
+        <a href="#" class="btn btn-ghost" id="ghBtn" data-hot>
+          GitHub
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6 14v-1.7c-2.3.5-3-1-3-1-.4-.9-1-1.2-1-1.2M10 14v-2.1c0-.6-.1-1-.4-1.3 1.9-.2 3.9-.9 3.9-4A3.1 3.1 0 0 0 12.6 4 2.9 2.9 0 0 0 12.5 1.8s-.7-.2-2.4.9a8.3 8.3 0 0 0-4.2 0C4.2 1.6 3.5 1.8 3.5 1.8A2.9 2.9 0 0 0 3.4 4a3.1 3.1 0 0 0-.9 2.6c0 3.1 2 3.8 3.9 4-.2.2-.4.6-.4 1.1V14"/></svg>
+        </a>
+      </div>
+
+      <dl class="ct-links" id="ctLinks"></dl>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap ft">
+    <div class="ft-l">© <span id="yr">2026</span> <b id="ftName">Adithya Machavarapu</b> — built from scratch, no template.</div>
+    <div class="ft-l" id="ftClock">—</div>
+    <a href="#hero" class="ft-up" data-hot>Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
