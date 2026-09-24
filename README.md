@@ -93,15 +93,4 @@ Three libraries, all from CDN: **three.js** (WebGL), **GSAP + ScrollTrigger**
 
 ---
 
-## A note on the Risk Lab
-
-The numbers are real, not decorative. The simulator runs geometric Brownian motion:
-
-$$S_{t+1} = S_t \cdot \exp\left(\left(\mu - \tfrac{\sigma^2}{2}\right)\Delta t + \sigma\sqrt{\Delta t}\,Z\right)$$
-
-VaR is the loss quantile of the terminal P&L distribution; Expected Shortfall is
-the mean loss beyond it. At ₹10L, 22% vol, 10 days, 95% confidence it returns
-roughly ₹67–69k — which matches the parametric answer (1.645 × σ√h × V, less
-drift) to within a rounding error.
-
 It is illustrative. It is not investment advice.
